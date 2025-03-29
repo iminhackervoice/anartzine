@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* Resets default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles the body with a background color and centers content */
+body {
+    font-family: arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles the gallery container */
+.gallery {
+    display: flex; /* Enables flexbox for layout */
+    justify-content: center; /* Centers images horizontally */
+    flex-wrap: wrap; /* Allows images to wrap onto the next line */
+    gap: 10px; /* Adds space between images */
+    margin-top: 20px;
+}
+
+/* Styles individual images */
+.gallery img {
+    width: 190px; /* Sets a fixed width */
+    height: 160px; /* Sets a fixed height */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 10px; /* Rounds the corners */
+    transition: transform 0.3s; /* Smooth animation effect */
+}
+
+/* Hover effect for images */
+.gallery img:hover {
+    transform: scale(1.1); /* Makes the image slightly bigger on hover */
+}
+/* styles.css (continued) */
+
+/* Styles the overlay */
+.overlay {
+    position: fixed; /* Makes it cover the whole screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Styles the enlarged image */
+.enlarged {
+    max-width: 80%; /* Limits width */
+    max-height: 80%; /* Limits height */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.word1 {
+    color: #77DD77; /* Questions You Wish You Could Ask Your Parents in pastel green hex code */
+}
+
+.word2 {
+    color: #FF6961; /* (and they'd answer honestly) in pastel red hex code */
+}
+
+.word3 {
+    color: #FFFFF0; /* a digitized art zine in ivory hex code */
+}
+.word4 {
+	color: #FFFFF0; /* by faridatmahamud@outlook.com */
+}	
+body {
+    background-color: #36454F; /* Charcoal grey hex code */
+}
+#custom-img1 {
+    max-width: 70%; /* Shrinks to fit the container */
+    height: auto; /* Keeps aspect ratio */
+}
+#custom-img2 {
+    max-width: 70%; /* Shrinks to fit the container */
+    height: auto; /* Keeps aspect ratio */
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr); /* 16 images per row */
+    gap: 5px; /* Space between images */
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%; /* Each image takes full column width */
+    height: auto;
+    max-width: 110px; /* Adjust based on your image size */
+    border-radius: 5px; /* Optional: rounded corners */
+}
